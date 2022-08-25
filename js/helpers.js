@@ -22,7 +22,7 @@ cameraControl.enableKeys = false;
 // Stats (frames per second)
 const stats = new Stats();
 stats.showPanel(0);
-document.body.appendChild(stats.dom);
+// document.body.appendChild(stats.dom);
 
 const playerCoordinates = document.getElementById('player-coordinates');
 
