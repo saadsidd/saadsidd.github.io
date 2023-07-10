@@ -3,10 +3,10 @@ import { BsMoonStars, BsMoonStarsFill } from 'react-icons/bs';
 
 export const Navbar: React.FC = () => {
   return (
-    <header id="nav">
-      <div className='nav-link'>About</div>
-      <div className='nav-link'>Projects</div>
-      <div className='nav-link'>Contact</div>
+    <header id='nav'>
+      <h1 className='nav-link'>About</h1>
+      <h1 className='nav-link'>Projects</h1>
+      <h1 className='nav-link'>Contact</h1>
       <div id='darkmode-icons-container'>
         <BsMoonStars className='darkmode-icon' />
         <BsMoonStarsFill className='darkmode-icon on' />
