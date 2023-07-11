@@ -1,12 +1,17 @@
 import './App.css';
-import { Experience } from './components/Experience';
+import { Navbar } from './components/Navbar';
+import { ThreeCanvas } from './components/ThreeCanvas';
+import { MainContent } from './components/MainContent';
 
 const App: React.FC = () => {
   return (
-    <div>
-      Hello World
-      <Experience />
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <ThreeCanvas />
+        <MainContent />
+      </main>
+    </>
   );
 }
 
