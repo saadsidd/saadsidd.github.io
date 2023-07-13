@@ -1,0 +1,31 @@
+.project-container {
+  height: 250px;
+  background-color: aqua;
+  display: flex;
+}
+
+.project-container-left {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  max-width: 200px;
+}
+
+.project-container-left > button {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.project-container-right {
+  padding: 15px;
+}
