@@ -1,6 +1,16 @@
 import './styles/ProjectCard.css';
 import { BsGithub, BsPlayFill } from 'react-icons/bs';
 
+interface Project {
+  imageSource: string;
+  sourceLink: string;
+  liveLink?: string;
+  
+  title: string;
+  description: string;
+  techStack: string;
+}
+
 export const ProjectCard: React.FC = () => {
   return (
     <article className='project-container'>
