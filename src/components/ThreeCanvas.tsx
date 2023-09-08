@@ -1,20 +1,30 @@
 import './styles/ThreeCanvas.css';
 import { Canvas } from '@react-three/fiber';
-import { Environment, OrbitControls } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import { Room } from "./Room";
 
-export const ThreeCanvas: React.FC = () => {
+type ThreeCanvasProps = {
+  darkMode: string;
+}
+
+export const ThreeCanvas: React.FC<ThreeCanvasProps> = ({ darkMode }) => {
   return (
     <div id='three-canvas-container'>
-      THREE CONTAINER
-      {/* <Canvas orthographic camera={{zoom: 45, position: [100, 100, 100]}}>
-        <color attach="background" args={['#f5efe6']}/>
+      {/* THREE CONTAINER */}
+      <Canvas orthographic camera={{zoom: 100, position: [100, 65, 100]}}>
 
-        <Room position={[0, -2, 0]} />
-        <Environment preset='forest' />
-        <OrbitControls enabled={true} enableZoom={false} />
+        <Room darkMode={darkMode} position={[0, -2, 0]} />
+        <ambientLight intensity={3} />
+        <OrbitControls
+          enabled={true}
+          enableZoom={true}
+          minPolarAngle={0}
+          maxPolarAngle={Math.PI / 2}
+          minAzimuthAngle={0}
+          maxAzimuthAngle={Math.PI / 2}
+        />
 
-      </Canvas> */}
+      </Canvas>
     </div>
   );
 }
